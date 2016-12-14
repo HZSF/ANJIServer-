@@ -1,14 +1,11 @@
 package com.weiwei.anji.controller;
 
-import java.io.IOException;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ruanwei.interfacej.SmsClientOverage;
 import com.weiwei.anji.autowiredbeans.VersionBean;
 import com.weiwei.anji.beans.AnnouncementBean;
 import com.weiwei.anji.beans.CityBean;
@@ -32,12 +30,8 @@ import com.weiwei.anji.beans.QuestionListBean;
 import com.weiwei.anji.beans.TrademarkGoodsServiceBean;
 import com.weiwei.anji.beans.VersionInfo;
 import com.weiwei.anji.common.Constants;
-import com.weiwei.anji.processors.AnnounceGovProcessor;
 import com.weiwei.anji.processors.AnnounceNewGovProcessor;
 import com.weiwei.anji.processors.AnnouncementNewProcessor;
-import com.weiwei.anji.processors.AnnouncementProcessor;
-import com.weiwei.anji.processors.ChangePasswordProcessor;
-import com.weiwei.anji.processors.FpwdCpwdProcessor;
 import com.weiwei.anji.processors.GetCityListProcessor;
 import com.weiwei.anji.processors.GetProvinceListProcessor;
 import com.weiwei.anji.processors.GetQuestionCommentProcessor;
@@ -98,6 +92,13 @@ public class HomeController {
     public String testService(@RequestBody QuestionSubmitRequest serviceRequest){
     	return serviceRequest.question;
     }
+	
+	@RequestMapping(value = "/sms/credit")
+	public String smsCredit() {
+		logger.info("query sms credit!");
+		return SmsClientOverage.queryOverage(Constants.SMS_SERVICE_URL, Constants.SMS_SERVICE_USERID, Constants.SMS_SERVICE_ACCOUNT, 
+    			Constants.SMS_SERVICE_PASSWORD);
+	}
 	
 	@RequestMapping(value="/announcement",  method = RequestMethod.POST)
 	public GeneralServiceResponse<AnnouncementBean> announcementService(@RequestBody AnnouncementRequest serviceRequest) {
