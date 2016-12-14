@@ -2287,3 +2287,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springso
 
 !ENTRY org.eclipse.ui 4 4 2016-12-08 23:50:50.772
 !MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pushin
+
+!ENTRY org.eclipse.core.jobs 2 2 2016-12-09 00:45:39.925
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.egit.ui.internal.push.PushJob

@@ -2,9 +2,10 @@ package com.weiwei.anji.security.authenticator;
 
 import java.util.Random;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken;
 
 import com.ruanwei.interfacej.SmsClientSend;
 import com.weiwei.anji.common.Constants;
@@ -17,6 +18,7 @@ import com.weiwei.anji.security.infrastructure.RegisterAuthenticationWithToken;
 import com.weiwei.anji.validation.RegisterFormValidator;
 
 public class PreRegisterAuthenticator implements ExternalServiceAuthenticator {
+	private static final Logger logger = LoggerFactory.getLogger(PreRegisterAuthenticator.class);
 	private ICustomerDAO customerDao;
 	
 	public ICustomerDAO getCustomerDao() {
@@ -73,6 +75,7 @@ public class PreRegisterAuthenticator implements ExternalServiceAuthenticator {
 	    	}
 	    	String resultFromSmsServer = SmsClientSend.sendSms(Constants.SMS_SERVICE_URL, Constants.SMS_SERVICE_USERID, Constants.SMS_SERVICE_ACCOUNT, 
 	    			Constants.SMS_SERVICE_PASSWORD, request.getPhoneNumber(), Constants.SMS_SERVICE_CONTENT+sb.toString()+Constants.SMS_SERVICE_SIGNATURE);
+	    	logger.info("sms return message: " + resultFromSmsServer);
 	    	return sb.toString();
 		}
 	}
