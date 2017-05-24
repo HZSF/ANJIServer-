@@ -1,2 +1,2 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>first commit</message>\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>updates</message>\n<message>add new api for sms credit query</message>\n<message>add sms log</message>\n<message>first commit</message>\n</messages>
 eclipse.preferences.version=1

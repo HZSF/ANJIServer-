@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.weiwei.anji.security.authenticator.PreFpwdAuthenticator"/>
-<fullyQualifiedTypeName name="com.weiwei.anji.validation.ForgetPasswordValidator"/>
-<fullyQualifiedTypeName name="com.weiwei.anji.common.Constants"/>
 <fullyQualifiedTypeName name="com.weiwei.anji.processors.VerifyFpwdProcessor"/>
 <fullyQualifiedTypeName name="com.weiwei.anji.request.FpwdCpwdRequest"/>
 <fullyQualifiedTypeName name="com.weiwei.anji.processors.FpwdCpwdProcessor"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="net.sf.ehcache.event.CacheEventListener"/>
 <fullyQualifiedTypeName name="net.sf.ehcache.event.CacheEventListenerFactory"/>
+<fullyQualifiedTypeName name="com.ruanwei.interfacej.SmsClientOverage"/>
+<fullyQualifiedTypeName name="java.net.URLEncoder"/>
+<fullyQualifiedTypeName name="com.ruanwei.tool.SmsClientAccessTool"/>
 </qualifiedTypeNameHistroy>

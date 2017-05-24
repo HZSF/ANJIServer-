@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=anji-devarea-srv/src\/main\/java&lt;com.weiwei.anji.dao{ITokenDAO.java[ITokenDAO" modifiers="513" timestamp="1458913254000"/>
-<typeInfo handle="=anji-devarea-srv/\/Users\/Yingkai\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/4.0.3.RELEASE\/spring-security-core-4.0.3.RELEASE.jar&lt;org.springframework.security.authentication(AuthenticationProvider.class[AuthenticationProvider" modifiers="1537" timestamp="1453393320000"/>
 <typeInfo handle="=anji-devarea-srv/src\/main\/java&lt;com.weiwei.anji.dao{IAreaDAO.java[IAreaDAO" modifiers="513" timestamp="1458983649000"/>
 <typeInfo handle="=anji-devarea-srv/src\/main\/java&lt;com.weiwei.anji.dao{IFinanceDAO.java[IFinanceDAO" modifiers="513" timestamp="1459676882000"/>
 <typeInfo handle="=anji-devarea-srv/src\/main\/java&lt;com.weiwei.anji.dao{ICourseDAO.java[ICourseDAO" modifiers="513" timestamp="1459072682000"/>
@@ -10,5 +9,4 @@
 <typeInfo handle="=anji-devarea-srv/src\/main\/java&lt;com.weiwei.anji.dao{ITrademarkDAO.java[ITrademarkDAO" modifiers="513" timestamp="1459171470000"/>
 <typeInfo handle="=anji-devarea-srv/src\/main\/java&lt;com.weiwei.anji.dao{IQuestionDAO.java[IQuestionDAO" modifiers="513" timestamp="1459356095000"/>
 <typeInfo handle="=anji-devarea-srv/src\/main\/java&lt;com.weiwei.anji.dao{IPropertyDAO.java[IPropertyDAO" modifiers="513" timestamp="1473052079000"/>
-<typeInfo handle="=anji-devarea-srv/\/Users\/Yingkai\/.m2\/repository\/org\/thymeleaf\/thymeleaf\/2.1.4.RELEASE\/thymeleaf-2.1.4.RELEASE.jar&lt;org.thymeleaf.processor(IProcessor.class[IProcessor" modifiers="1537" timestamp="1458047585000"/>
 </typeInfoHistroy>
