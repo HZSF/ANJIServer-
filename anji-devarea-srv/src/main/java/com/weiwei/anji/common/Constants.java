@@ -13,7 +13,7 @@ public class Constants {
 	final public static String NO = "N";
 	
 	//sms
-	final public static String SMS_SERVICE_URL = "http://xtx.telhk.cn:8080/sms.aspx?";
+	final public static String SMS_SERVICE_URL = "http://121.52.209.124:8888/sms.aspx?";
 	final public static String SMS_SERVICE_USERID = "5272";
 	final public static String SMS_SERVICE_ACCOUNT = "a10103";
 	final public static String SMS_SERVICE_PASSWORD = "1235451";

@@ -76,6 +76,7 @@ public class PreRegisterAuthenticator implements ExternalServiceAuthenticator {
 	    	String resultFromSmsServer = SmsClientSend.sendSms(Constants.SMS_SERVICE_URL, Constants.SMS_SERVICE_USERID, Constants.SMS_SERVICE_ACCOUNT, 
 	    			Constants.SMS_SERVICE_PASSWORD, request.getPhoneNumber(), Constants.SMS_SERVICE_CONTENT+sb.toString()+Constants.SMS_SERVICE_SIGNATURE);
 	    	logger.info("sms return message: " + resultFromSmsServer);
+	    	System.out.println(resultFromSmsServer);
 	    	return sb.toString();
 		}
 	}
